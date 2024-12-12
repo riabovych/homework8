@@ -6,10 +6,11 @@ public class TestShapes {
         Triangle triangle = new Triangle();
         Rectangle rectangle = new Rectangle();
 
-        System.out.println("Figure is: " + square.getName());
-        System.out.println("Figure is: " + circle.getName());
-        System.out.println("Figure is: " + quad.getName());
-        System.out.println("Figure is: " + triangle.getName());
-        System.out.println("Figure is: " + rectangle.getName());
+        ShapePrinter printer = new ShapePrinter();
+        printer.printShape(square);
+        printer.printShape(circle);
+        printer.printShape(quad);
+        printer.printShape(triangle);
+        printer.printShape(rectangle);
     }
 }
